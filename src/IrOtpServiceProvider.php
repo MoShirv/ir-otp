@@ -2,9 +2,9 @@
 
 namespace MoShirv\IrOtp;
 
+use MoShirv\IrOtp\Commands\IrOtpCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MoShirv\IrOtp\Commands\IrOtpCommand;
 
 class IrOtpServiceProvider extends PackageServiceProvider
 {
@@ -19,7 +19,12 @@ class IrOtpServiceProvider extends PackageServiceProvider
             ->name('ir-otp')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_ir_otp_table')
+            ->hasMigration('create_otps_table')
             ->hasCommand(IrOtpCommand::class);
+    }
+
+    public function packageRegistered()
+    {
+        $this->app->singleton('ir-otp', fn () => new IrOtpService);
     }
 }
