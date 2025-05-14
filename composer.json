@@ -1,7 +1,6 @@
 {
     "name": "moshirv/ir-otp",
     "description": "Simple OTP implementation for Iranian phone numbers",
-    "version": "1.0.0",
     "keywords": [
         "MoShirv",
         "laravel",
