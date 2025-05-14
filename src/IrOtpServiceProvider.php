@@ -2,9 +2,9 @@
 
 namespace MoShirv\IrOtp;
 
+use MoShirv\IrOtp\Commands\IrOtpCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MoShirv\IrOtp\Commands\IrOtpCommand;
 
 class IrOtpServiceProvider extends PackageServiceProvider
 {
