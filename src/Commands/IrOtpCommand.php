@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace MoShirv\IrOtp\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class IrOtpCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'ir-otp';
 
     public $description = 'My command';
 

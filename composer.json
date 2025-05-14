@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "moshirv/ir-otp",
+    "description": "Simple OTP implementation for Iranian phone numbers",
     "keywords": [
-        ":vendor_name",
+        "MoShirv",
         "laravel",
-        ":package_slug"
+        "ir-otp"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/moshirv/ir-otp",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "MoShirv",
+            "email": "gmodern2560@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "MoShirv\\IrOtp\\": "src/",
+            "MoShirv\\IrOtp\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "MoShirv\\IrOtp\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "MoShirv\\IrOtp\\IrOtpServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "IrOtp": "MoShirv\\IrOtp\\Facades\\IrOtp"
             }
         }
     },
